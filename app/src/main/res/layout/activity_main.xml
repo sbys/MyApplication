@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.myapplication.MainActivity">
+
+   <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f59c2f"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:gravity="center"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="买买买"
+                android:gravity="center"
+                android:textSize="25dp" />
+       </android.support.v7.widget.Toolbar>
+       <android.support.v7.widget.Toolbar
+           android:id="@+id/toolbar1"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="#e3eaf4"
+           app:popupTheme="@style/AppTheme.PopupOverlay"
+
+           >
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:id="@+id/imageButton"
+                android:layout_alignParentLeft="true"
+                />
+           <EditText
+               android:layout_height="match_parent"
+               android:layout_width="match_parent"
+               android:layout_toRightOf="@id/imageButton"
+               android:id="@+id/edit"
+               android:layout_marginRight="30dp"
+
+
+               />
+           <ImageButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignRight="@+id/edit"
+               android:layout_alignParentBottom="true"
+              />
+           </RelativeLayout>
+       </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/sort1"
+    android:orderInCategory="10"
+    android:title="按价格从高到低排序"
+
+    >
+</item>
+    <item
+        android:id="@+id/sort2"
+        android:orderInCategory="10"
+        android:title="按价格从低到高排序"
+
+        >
+    </item>
+    <item
+        android:id="@+id/sort3"
+        android:orderInCategory="10"
+        android:title="综合排序"
+
+        >
+    </item>
+</menu>
